@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karar Verme Teknikleri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Karar Verme Teknikleri</h1>
+    </header>
+
+    <div>
+        <!-- İlk Sayfa: Tablo ve Teknik Seçimi -->
+        <div id="form-bolumu">
+            <h2>Tablo Oluştur</h2>
+            <form id="karar-formu">
+                <label for="satir-sayisi">Satır Sayısı:</label>
+                <input type="number" id="satir-sayisi" name="satirSayisi" min="1" required>
+
+                <label for="sutun-sayisi">Sütun Sayısı:</label>
+                <input type="number" id="sutun-sayisi" name="sutunSayisi" min="1" required>
+
+                <label for="teknik-secimi">Teknik Seçimi:</label>
+                <select id="teknik-secimi" name="teknikSecimi" required>
+                    <option value="" disabled selected>Teknik Seçimi</option>
+                    <option value="iyimserlik">İyimserlik</option>
+                    <option value="kotumserlik">Kötümserlik</option>
+                    <option value="es-olasilik">Eş Olasılık</option>
+
+                </select>
+
+                <label for="karar-turu">Kar/Maliyet:</label>
+                <select id="karar-turu" name="kararTuru" required>
+                    <option value="" disabled selected>Karar Türü</option> <!-- Boş seçenek -->
+                    <option value="kar">Kar</option>
+                    <option value="maliyet">Maliyet</option>
+                </select>
+
+                <button type="button" id="tablo-olustur">Tabloyu Oluştur</button>
+            </form>
+        </div>
+
+        <!-- İkinci Sayfa: Tekniklerin Hesaplanması -->
+        <div id="tablo-bolumu" style="display: none;">
+            <h2>Tablo ve Sonuçlar</h2>
+            <div id="tablo-kapsayici"></div>
+            <button type="button" id="hesapla">Hesapla</button>
+            <button type="button" id="yeniden">Anasayfa</button>
+            
+        </div>
+
+        <!-- Sonuç Div'i -->
+        <div id="sonuc"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

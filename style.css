@@ -1,0 +1,105 @@
+/* Sayfa genel düzeni */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Form stili */
+form {
+    margin: 20px auto; /* Formu üstten boşluk bırakarak ortalar */
+    padding: 20px; /* Form elemanları arasında boşluk bırakır */
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 300px; /* Formun genişliği %80 olarak ayarlanır */
+}
+
+/* Form elemanları (label, input, select, button) */
+label, input, select, button {
+    display: block; /* Her eleman bir satıra yerleşir */
+    width: 150px; /* Elemanlar formun tamamını kaplar */
+    margin: 10px 75px; /* Elemanlar arasında boşluk bırakılır */
+}
+
+/* Buton stili */
+button {
+    background-color: #005f73; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi */
+    border: none;
+    padding: 10px;
+    cursor: pointer; /* Fareyle üzerine gelince imleci değiştirir */
+}
+
+button:hover {
+    background-color: #0a9396; /* Butona fare ile tıklandığında rengi değişir */
+}
+
+/* 2. Sayfa: Tabloyu ve butonu ortalamak için stil */
+#tablo-bolumu {
+    text-align: center; /* İçeriği yatayda ortalar */
+    margin-top: 20px;
+}
+
+/* Tablo stili */
+table {
+    margin: 0 auto; /* Tabloyu yatayda ortalar */
+    border-collapse: collapse; /* Hücrelerin arasındaki boşluğu kaldırır */
+    width: 60%; /* Tabloyu %80 genişliğinde yapar */
+}
+
+/* Tablo, th ve td için sınır eklenir */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+
+     /* Hücre içindeki yazıları ortalar */
+}
+
+/* Hesapla butonunun stili */
+#hesapla {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Butonun arka plan rengi */
+    color: white;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
+
+#hesapla:hover {
+    background-color: #45a049; /* Butona fare ile tıklandığında rengi değişir */
+    
+}
+#yeniden {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Butonun arka plan rengi */
+    color: white;
+    border: none;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    
+}
+
+#yeniden:hover {
+    background-color: #45a049; /* Butona fare ile tıklandığında rengi değişir */
+    
+}
+ #sonuclar{
+    margin: 20px;
+ }
+ #hesapla, #yeniden {
+    display: inline-block;}
